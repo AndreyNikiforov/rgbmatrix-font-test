@@ -17,7 +17,7 @@ pipkin -d lib install adafruit-circuitpython-display-text  adafruit-circuitpytho
 
 ## fonts
 
-- download font release from TBD
+- download font release from https://github.com/adafruit/circuitpython-fonts
 - extract
 - copy contents of the lib folder into lib folder of project (only some will fit)
 
@@ -26,9 +26,16 @@ pipkin -d lib install adafruit-circuitpython-display-text  adafruit-circuitpytho
 on the host:
 
 ```shell
+mkdir -p /Volumes/CIRCUITPY/fonts
+```
+
+```shell
 cp -r -v ./src/* /Volumes/CIRCUITPY && cp -r -v -n ./lib/* /Volumes/CIRCUITPY/lib
 ```
 
+```shell
+cp -r -v -n ./fonts/* /Volumes/CIRCUITPY/fonts
+```
 
 
 
