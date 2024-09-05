@@ -82,7 +82,7 @@ font_index = 0
 last_update = time.monotonic()
 while(True):
     label.update()
-    if time.monotonic() - last_update > 5:
+    if time.monotonic() - last_update > 8:
         if font_index == len(fonts):
             font_index = 0
         font_name = fonts[font_index]
